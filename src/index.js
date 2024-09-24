@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import FruitList from './component/fruitList'; // Import the correct FruitList component
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); // Create the root correctly
 root.render(
   <React.StrictMode>
-    <App />
+    <FruitList fruits={["Mango", "Banana", "Apple","Cherry","Guava","Litchi"]} /> {/* Pass the fruits prop here */}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
